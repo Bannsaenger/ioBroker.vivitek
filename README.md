@@ -30,6 +30,9 @@ As i know for now, the protocol covers a whole family of projectos.
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (Bannsaenger) updated dependencies and issues from repository checker
+
 ### 0.1.3 (2025-10-24)
 * (Bannsaenger) updated dependencies and issues from repository checker
 * (Bannsaenger) migrate to NPM Trusted Publishing
