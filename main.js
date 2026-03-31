@@ -13,9 +13,9 @@
 const utils = require('@iobroker/adapter-core');
 
 // Load your modules here, e.g.:
-const fs = require('fs');
-const net = require('net');
-const util = require('util');
+const fs = require('node:fs');
+const net = require('node:net');
+const util = require('node:util');
 
 class Vivitek extends utils.Adapter {
     /**
