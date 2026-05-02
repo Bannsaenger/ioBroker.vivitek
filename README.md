@@ -31,6 +31,7 @@ As i know for now, the protocol covers a whole family of projectos.
     ### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
+- (copilot) Adapter requires node.js >= 22 now
 * (Bannsaenger) updated dependencies and issues from repository checker
 
 ### 0.1.3 (2025-10-24)
