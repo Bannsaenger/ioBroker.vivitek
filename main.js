@@ -2,11 +2,11 @@
  *
  *      iobroker pjlink Adapter
  *
- *      Copyright (c) 2022-2025, Bannsaenger <bannsaenger@gmx.de>
+ *      Copyright (c) 2022-2026, Bannsaenger <bannsaenger@gmx.de>
  *
  *      MIT License
  *
- *      Created with @iobroker/create-adapter v1.26.3
+ *      Created with iobroker/create-adapter v1.26.3
  *
  */
 
@@ -123,7 +123,6 @@ class Vivitek extends utils.Adapter {
                 */
                 let tempState = await this.getStateAsync('input');
                 if (tempState) {
-                    // @ts-expect-error val is possible null
                     this.projector.input = tempState.val.toString() || '6';
                 }
                 tempState = await this.getStateAsync('blank');
@@ -607,7 +606,6 @@ class Vivitek extends utils.Adapter {
             if (typeof obj === 'object' && obj.command) {
                 const sendBack = [];
                 const sysConfig = await this.getForeignObjectAsync('system.config');
-                // @ts-expect-error hopefully the system config object is not undefined
                 const sysLang = sysConfig.common.language;
                 this.log.debug(`get command: ${JSON.stringify(obj.command)}`);
                 switch (obj.command) {
